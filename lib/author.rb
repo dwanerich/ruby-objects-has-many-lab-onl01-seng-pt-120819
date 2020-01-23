@@ -9,7 +9,8 @@ class Author
   end
 
   def posts
-    Post.all.select {|post| post.author == self} #FALSE POSITIVE!!!!!
+    Post.all.select do |song|
+      post.author == self #FALSE POSITIVE!!!!!
 
   end
   #
