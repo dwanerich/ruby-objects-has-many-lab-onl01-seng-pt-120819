@@ -16,4 +16,8 @@ class Song
     @name
   end
 
+  def artist_name
+    artist.name
+  end
+
 end
