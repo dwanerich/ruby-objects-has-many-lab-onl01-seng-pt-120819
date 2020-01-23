@@ -17,10 +17,10 @@ class Post
   end
 
   def author_name
-    if author.name
-    return author.name
+  if author.name
+    author.name
   else
-    nil
+    puts nil
   end
 
 end
