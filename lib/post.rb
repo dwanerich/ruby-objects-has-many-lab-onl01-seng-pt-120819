@@ -18,5 +18,8 @@ class Post
 
   def author_name
     author.name
+  else
+    return nil
+  end
   end
 end
