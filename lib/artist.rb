@@ -10,7 +10,10 @@ class Artist
   end
 
   def songs
-    Song.all.select {|song| self} #FALSE POSITIVE!!!!!
+    Song.all.select do |song|
+      song.artist == self
+    end
+       #FALSE POSITIVE!!!!!
 
   end
 
