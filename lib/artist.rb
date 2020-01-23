@@ -12,8 +12,6 @@ class Artist
   def songs
     Song.all.select do |song|
       song.artist == self
-    end
-       #FALSE POSITIVE!!!!!
 
   end
 
@@ -28,7 +26,7 @@ class Artist
     add_song(s)
   end
 
-  def song_count
+  def self.song_count
     self.songs.size
   end
 end
