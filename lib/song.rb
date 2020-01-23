@@ -16,7 +16,4 @@ class Song
     @name
   end
 
-  # def artist.name
-  #
-  # end
 end
