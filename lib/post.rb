@@ -17,9 +17,9 @@ class Post
   end
 
   def author_name
-  author.name || puts nil
-
+    author.name
+  else
+    return nil
   end
-
   end
 end
