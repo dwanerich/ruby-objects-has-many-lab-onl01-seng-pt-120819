@@ -17,7 +17,10 @@ class Song
   end
 
   def artist_name
-    artist.name || return nil
+    artist.name == true
+    else
+      return nil
+    end
   end
 
 end
