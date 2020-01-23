@@ -18,8 +18,8 @@ class Post
 
   def author_name
   author.name || puts nil
-end
-end
+
+  end
 
   end
 end
