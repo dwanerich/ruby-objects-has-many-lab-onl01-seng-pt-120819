@@ -16,4 +16,8 @@ class Song
     @name
   end
 
+  def artist
+    @self
+  end
+
 end
