@@ -16,8 +16,4 @@ class Song
     @name
   end
 
-  def artist
-
-  end
-
 end
