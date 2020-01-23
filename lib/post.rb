@@ -20,7 +20,7 @@ class Post
     if author.name == author.name
       author.name
     else
-     nil
+     puts nil
     end
   end
 end
