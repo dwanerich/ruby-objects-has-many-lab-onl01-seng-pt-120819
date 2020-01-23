@@ -9,7 +9,7 @@ class Author
   end
 
   def posts
-    Post.all.select {|post| post} #FALSE POSITIVE!!!!!
+    Post.all.select {|post| post.author == self} #FALSE POSITIVE!!!!!
 
   end
   #

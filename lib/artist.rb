@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
 
   attr_accessor :name
@@ -10,12 +11,11 @@ class Artist
   end
 
   def songs
-    Song.all.select {|song| self} #FALSE POSITIVE!!!!!
-
+    Song.all.select {|song| song.artist == self}
   end
 
   def add_song(song)
-    @songs << song
+    self.songs << song
     song.artist = self
     @@song_count += 1
   end
@@ -25,11 +25,7 @@ class Artist
     add_song(s)
   end
 
-  def song_count
-    self.songs.size
-  end
-
   def self.song_count
-    @@song_count
+    return @@song_count
   end
 end
